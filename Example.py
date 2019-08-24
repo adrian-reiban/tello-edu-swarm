@@ -63,4 +63,4 @@ swarm.simultaneous_control_egalitarian_actions([0, 1], "land")
 swarm.end_mission()
 
 final_time = time.time() - init_time
-logging.debug("\n\rThe time elapsed is: %s " % final_time)
+logging.debug("The time elapsed is: %s " % final_time)
