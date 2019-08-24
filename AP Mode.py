@@ -13,16 +13,16 @@ def set_ap(ssid, password):
     print('sending command %s' % cmd_str)
     my_socket.sendto(cmd_str.encode('utf-8'), ('192.168.10.1', 8889))
     response, ip = my_socket.recvfrom(100)
-    print('from %s: %s' % (ip, response))
+    print("from %s: %s" % (ip, response))
 
     cmd_str = 'ap %s %s' % (ssid, password)
     print('sending command %s' % cmd_str)
     my_socket.sendto(cmd_str.encode('utf-8'), ('192.168.10.1', 8889))
     response, ip = my_socket.recvfrom(100)
-    print('from %s: %s' % (ip, response))
+    print("from %s: %s" % (ip, response))
 
-# example of setting Tello into command mode
+# Example of setting Tello into command mode
 # only works if server is connected to Tello Wi-Fi
-set_ap('Tello_Nest', 'tellotello')
+set_ap('Tello_Network', 'Password')
 
 
