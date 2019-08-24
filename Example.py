@@ -9,7 +9,7 @@ swarm = Swarm()
 
 init_time = time.time()
 
-swarm.start_mision([0, 1])
+swarm.start_mission([0, 1])
 
 # Test of sending commands
 # You can comment this block
@@ -60,7 +60,7 @@ for _ in range(2):
 swarm.simultaneous_control_different_actions([0, 1], ["down 50", "up 50"])
 
 swarm.simultaneous_control_egalitarian_actions([0, 1], "land")
-swarm.end_mision()
+swarm.end_mission()
 
 final_time = time.time() - init_time
 logging.debug("\n\rThe time elapsed is: ", final_time)
