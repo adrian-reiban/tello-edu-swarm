@@ -114,7 +114,7 @@ class Swarm:
         if len(resend) > 0:
             self.simultaneous_resending_egalitarian_actions(resend, command)
 
-    # Function responsible for forwarding common messages to all drones
+    # Function responsible for sending common messages to all drones
     def simultaneous_resending_egalitarian_actions(self, resend, command):
         for i in range(self.RETRIES):
             visited = list()
@@ -172,7 +172,7 @@ class Swarm:
         if len(resend) > 0:
             self.simultaneous_resending_different_actions(resend, commands)
 
-    # Function responsible for forwarding messages other than the respective drones
+    # Function responsible for sending different messages to the respective drones
     def simultaneous_resending_different_actions(self, resend, commands):
         for i in range(self.RETRIES):
             visited = list()
