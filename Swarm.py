@@ -123,7 +123,7 @@ class Swarm:
             self.control_timer = False
             # Creating a timer that will work for the time set in RESPONSE_TIMEOUT and then call
             # the cancel_timer function
-            temp = threading.Timer(self.TIME_BETWEEN_COMMANDS, self.cancel_timer)
+            temp = threading.Timer(self.RESPONSE_TIMEOUT, self.cancel_timer)
             # Start temp
             temp.start()
             while len(visited) < len(resend):
@@ -181,7 +181,7 @@ class Swarm:
             self.control_timer = False
             # Creating a timer that will work for the time set in RESPONSE_TIMEOUT and then call
             # the cancel_timer function
-            temp = threading.Timer(self.TIME_BETWEEN_COMMANDS, self.cancel_timer)
+            temp = threading.Timer(self.RESPONSE_TIMEOUT, self.cancel_timer)
             # Start temp
             temp.start()
             while len(visited) < len(resend):
