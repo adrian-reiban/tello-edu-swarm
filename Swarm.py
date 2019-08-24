@@ -38,13 +38,13 @@ class Swarm:
         self.control_timer = True
 
     # This function initializes the selected drones to accept control commands
-    def start_mision(self, selected_drones):
+    def start_mission(self, selected_drones):
         for i in range(len(selected_drones)):
             self.tellos[selected_drones[i]].send("command")
         self.simultaneous_checking_egalitarian_actions(selected_drones, "command")
 
     # Close the communication sockets of each of the drones
-    def end_mision(self):
+    def end_mission(self):
         time.sleep(5)
         for i in range(len(self.tellos)):
             self.tellos[i].close_sockets()
