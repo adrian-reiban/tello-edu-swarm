@@ -14,12 +14,12 @@ class Tello:
     logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
 
     # Tello class constructor
-    def __init__(self, name_drone, drone_address, drone_port, computer_port):
+    def __init__(self, name_drone, drone_address, computer_port):
         # Set the name of the Tello drone
         self.name_drone = name_drone
 
         # Set the Tello ip address and set your comunication port
-        self.tello_address = (drone_address, drone_port)
+        self.tello_address = (drone_address, 8889)
 
         # Set the address and port of your local computer
         self.local_address = ('', computer_port)
