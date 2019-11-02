@@ -17,14 +17,14 @@ class Swarm:
 
     def __init__(self):
         # Creating Tello objects with their addresses and communication ports
-        self.tello1 = Tello("Tello 1", '192.168.0.103', 8889, 9010)
-        self.tello2 = Tello("Tello 2", '192.168.0.104', 8889, 9011)
-        self.tello3 = Tello("Tello 3", '192.168.0.105', 8889, 9012)
-        self.tello4 = Tello("Tello 4", '192.168.0.106', 8889, 9013)
-        self.tello5 = Tello("Tello 5", '192.168.0.107', 8889, 9014)
-        self.tello6 = Tello("Tello 6", '192.168.0.108', 8889, 9015)
-        self.tello7 = Tello("Tello 7", '192.168.0.109', 8889, 9016)
-        self.tello8 = Tello("Tello 8", '192.168.0.110', 8889, 9017)
+        self.tello1 = Tello("Tello 1", '192.168.0.103', 9010)
+        self.tello2 = Tello("Tello 2", '192.168.0.104', 9011)
+        self.tello3 = Tello("Tello 3", '192.168.0.105', 9012)
+        self.tello4 = Tello("Tello 4", '192.168.0.106', 9013)
+        self.tello5 = Tello("Tello 5", '192.168.0.107', 9014)
+        self.tello6 = Tello("Tello 6", '192.168.0.108', 9015)
+        self.tello7 = Tello("Tello 7", '192.168.0.109', 9016)
+        self.tello8 = Tello("Tello 8", '192.168.0.110', 9017)
 
         # Creating a list of Tello objects
         self.tellos = [self.tello1, self.tello2, self.tello3, self.tello4,
